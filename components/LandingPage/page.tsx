@@ -39,7 +39,7 @@ const LandingPage = (props: Props) => {
             ))}
           </div>
           <div className="h-full w-full flex flex-1 justify-end items-end">
-            <Image src="/vercel.svg" alt="Next Logo" height={100} width={100} />
+            <Image src="/next.svg" alt="Next Logo" height={100} width={100} />
           </div>
         </div>
         <div className="h-[88vh] flex flex-col">
