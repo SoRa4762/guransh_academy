@@ -9,7 +9,14 @@ const LandingPage = (props: Props) => {
   return (
     <>
       {/* home section */}
-      <div className="h-screen w-screen px-12 bg-slate-100">
+      <div
+        className="h-screen w-screen px-12 bg-slate-100"
+        style={{
+          background: `url("/mainBG.png")`,
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
         <div className="h-[12vh] flex">
           <div className="h-full w-full flex flex-1 justify-start items-end">
             <Image
@@ -19,14 +26,8 @@ const LandingPage = (props: Props) => {
               width={100}
               className="rounded-full h-16 w-16"
             />
-            {/* <Image
-              src="/next.svg"
-              alt="Guransh Academy Logo 1"
-              height={100}
-              width={100}
-            /> */}
           </div>
-          <div className="h-full w-full flex flex-[2] justify-between items-end text-lg text-slate-900 uppercase font-semibold">
+          <div className="h-full w-full flex flex-[2] justify-between items-end text-lg text-slate-900 uppercase font-bold">
             {navBar.map((nav, index) => (
               <Link
                 href={nav.link}
@@ -100,7 +101,7 @@ const LandingPage = (props: Props) => {
         style={{
           background: `linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url("/bg3_1.jpg")`,
           backgroundSize: "cover",
-          backgroundPosition: "top",
+          // backgroundPosition: "top",
         }}
       >
         <div className="h-full w-full flex justify-center md:justify-end items-center">
